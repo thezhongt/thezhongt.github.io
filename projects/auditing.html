@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontier Security Auditing Mini Writeup</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="page-shell">
+        <nav class="topbar">
+            <a href="../index.html" class="topbar-name">thomas zhong</a>
+            <div class="topbar-nav">
+                <a href="../about.html">about</a>
+                <a href="../work.html" class="active">work</a>
+                <a href="../blog.html">blog</a>
+                <a href="../ThomasZhong_Resume.pdf" target="_blank">resume</a>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="artifact-content">
+                <h1>Mandatory Third-Party White-Box Auditing</h1>
+                <p class="subtitle">policy · ai governance</p>
+                <hr>
+                <p>This is a timed policy proposal I wrote for the IAPS fellowship application which I'm proud of.</p>
+                <p><strong>An evaluation gap is emerging with general-purpose AIs </strong>&mdash; that is to say,
+                    &ldquo;performance on
+                    pre-deployment tests does not reliably predict real-world utility or risk&rdquo; (International AI
+                    Safety Report 2026). This gap is constantly widening due to the rapid scaling of capabilities.
+                    Simultaneously, advanced models are demonstrating &ldquo;alignment faking&rdquo; and the ability to
+                    distinguish between a test environment and a live deployment, allowing them to bypass safety filters
+                    by hiding their true capabilities until released. This is currently not problematic due to
+                    chain-of-thought monitoring being effective, but there&rsquo;s no guarantee that advanced models
+                    won&rsquo;t be able to obfuscate their reasoning or begin reasoning in an incomprehensible
+                    language.</p>
+                <p>I therefore propose the use of mandatory third-party, white-box auditing for the following
+                    reasons:</p>
+                <ol class="artifact-list">
+                    <li><strong>Black-box testing is becoming less trustworthy</strong> as the evaluation gap grows and
+                        situationally aware models become more prevalent. Internal safety teams and external auditors
+                        currently rely heavily on behavioral testing &mdash; judging a model by the text or actions it
+                        outputs. This is dangerous as deceptively aligned models are incentivized to output the exact
+                        benign response as a truly safe model during a test. White-box techniques such as sparse
+                        autoencoders have the capability to analyze models&rsquo; internal reasoning as they produce an
+                        answer, effectively verifying causal correctness rather than just surface-level
+                        persuasiveness.</li>
+                    <li><strong>Corporate safety teams face commercial pressures</strong> to quickly release the most
+                        capable models. Allowing frontier labs to self-certify their models entirely by themselves is a
+                        conflict of interest. This has been cited as one of the reasons for Mrinank Sharma&rsquo;s
+                        resignation as a safety researcher at Anthropic, saying they &ldquo;constantly face pressures to
+                        set aside what matters most.&rdquo;</li>
+                </ol>
+                <div class="artifact-links">
+                    <a href="https://substack.com/home/post/p-189396937" target="_blank">read original post ↗</a>
+                    <a href="../work.html">← back to work</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            &copy; 2026 Thomas Zhong
+        </footer>
+    </div>
+</body>
+
+</html>
