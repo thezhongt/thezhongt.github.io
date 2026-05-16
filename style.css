@@ -254,6 +254,20 @@ body::before {
   color: var(--text);
 }
 
+/* ---- About Video ---- */
+.about-video {
+  margin-bottom: 1.2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.about-video video {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
 /* ---- Work Page (combined research + projects) ---- */
 .projects-content {
   max-width: 620px;
